@@ -32,7 +32,7 @@ export class AppComponent {
     const sky = scene.addComponent(AtmosphericComponent);
     const camObj = new Object3D();
     const cam = camObj.addComponent(Camera3D);
-    cam.perspective(60, window.innerWidth / window.innerHeight, 0.1, 5000);
+    cam.perspective(120, 800/600, 0.1, 5000);
     const controller = camObj.addComponent(HoverCameraController);
     controller.setCamera(0, 0, 15);
     scene.addChild(camObj);
